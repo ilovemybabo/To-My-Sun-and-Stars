@@ -103,6 +103,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
+    z-index: 10;
 }
 
 .book {
@@ -110,6 +111,7 @@ body {
     height: 450px;
     position: relative;
     perspective: 1500;
+    z-index: 10;
 }
 
 input {

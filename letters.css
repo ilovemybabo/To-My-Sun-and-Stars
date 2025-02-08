@@ -10,40 +10,34 @@ body {
 }
 
 /* Header Styling */
-header {
-    width: 100%;
-    background-color: #333;
+header{
+    width: 100%; 
+    max-width: 100%;
+    padding-left: 100px;
+    height: 50px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 0;
+    position: relative;
     z-index: 1000;
-    padding: 10px;
 }
 
-header nav {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-header nav a {
+header nav a{
     color: #fff;
+    margin-right: 5px;
+    padding: 5px 10px;
     font-size: 16px;
-    padding: 10px 20px;
+    transition: 0.2s;
     text-decoration: none;
-    transition: 0.3s;
 }
 
-a.active {
-    background-color: #e5314e;
-    border-radius: 5px;
+a.active{
+    background: #e5314e;
+    border-radius: 2px;
 }
 
-a:hover {
-    background-color: #e5314e;
-    border-radius: 5px;
+a:hover{
+    background: #e5314e;
+    border-radius: 2px;
 }
 
 /* Body Styling */

@@ -1,3 +1,6 @@
+window.onload = function() {
+    window.location.href = "landingpage.html";
+    
 var nextBtn = document.querySelector('.next'),
     prevBtn = document.querySelector('.prev'),
     carousel = document.querySelector('.carousel'),

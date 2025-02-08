@@ -39,7 +39,7 @@ input {
 }
 .back-cover {
 	position: relative;
-	z-index: -1;
+	z-index: 1; /* Ensure back-cover is under the pages */
 }
 .page {
 	position: absolute;
@@ -52,6 +52,7 @@ input {
 	transform-style: preserve-3d;
 	transform: rotateY(0deg);
 	transition-duration: 1.5s;
+	z-index: 2; /* Pages should be behind the arrows */
 }
 .page img {
 	width: 100%;
@@ -72,18 +73,25 @@ input {
 	width: 100%;
 	height: 100%;
 	backface-visibility: hidden;
-	z-index: 99;
+	z-index: 1; /* Keep back page below front page */
 }
 .next, .prev {
 	position: absolute;
 	bottom: 1em;
 	cursor: pointer;
+	font-size: 30px;
+	color: #000;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	padding: 10px;
 }
 .next {
 	right: 1em;
+	z-index: 10; /* Ensure next button is on top of pages */
 }
 .prev {
 	left: 1em;
+	z-index: 10; /* Ensure prev button is on top of pages */
 }
 #page1 {
 	z-index: 3;

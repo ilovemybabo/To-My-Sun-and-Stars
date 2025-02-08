@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="yes_style.css">
-        
-    </head> 
-    <body>
-        <div class="container">
-            <div >
-                <h1 class = "header_text">Hurrayyyy!!</h1>
-            </div>
-            <div class="gif_container">
-                <img src="https://media0.giphy.com/media/T86i6yDyOYz7J6dPhf/giphy.gif" alt="Cute animated illustration">
-            </div>
+<head>
+    <link rel="stylesheet" href="yes_style.css">
+</head> 
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header_text">Hurrayyyy!!</h1>
         </div>
-       
-    </body> 
+        <div class="gif_container">
+            <img src="https://media0.giphy.com/media/T86i6yDyOYz7J6dPhf/giphy.gif" alt="Cute animated illustration">
+        </div>
+        <div class="buttons">
+            <!-- Button to confirm and redirect to index.html -->
+            <button class="btn" id="yesButton" onclick="finalConfirmation()">Yes, I'm sure!</button>
+        </div>
+    </div>
+
+    <script>
+        function finalConfirmation() {
+            // Ask for the second confirmation
+            const userConfirmed = confirm("Are you sure you want to proceed?");
+            if (userConfirmed) {
+                window.location.href = "index.html";  // Redirect to the main page
+            }
+        }
+    </script>
+</body> 
 </html>

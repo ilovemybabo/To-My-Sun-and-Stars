@@ -28,12 +28,12 @@ body{
     font-family: "Poppins",sans-serif;
 }
 .fa-heart {
-    color: rgb(60, 0, 60);
+    color: rgb(183, 43, 44);
     font-size: 25px;
     position: absolute;
     animation:  heartMove linear 1;
     top: -10vh;
-    z-index: 0;
+    z-index: 1;
 }
 
 @keyframes heartMove {

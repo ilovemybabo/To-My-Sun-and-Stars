@@ -18,11 +18,11 @@
     </div>
 
     <script>
-        function finalConfirmation() {
-    // Ask for the second confirmation
+       function finalConfirmation() {
     const userConfirmed = confirm("Are you sure you want to proceed?");
     if (userConfirmed) {
-        window.location.replace("home.html");
+        // This will take the user to the new page
+        window.location.assign("home.html");
             }
         }
     </script>

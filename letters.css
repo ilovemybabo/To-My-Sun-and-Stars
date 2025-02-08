@@ -1,9 +1,5 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    background-color: rgb(251, 198, 207);
+    background: linear-gradient(to right, #FFC0CB, #C61E12); /* Gradient background */
 }
 
 /* Reset margin and padding */

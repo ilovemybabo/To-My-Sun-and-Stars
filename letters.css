@@ -1,34 +1,57 @@
+/* Reset margin and padding */
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header section /
 header {
     width: 100%;
-    padding: 20px;
-    background-color: #333;
-}
-
-nav {
+    height: 60px;
+    background-color: #333; / Make the background darker /
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-nav a {
+header nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly; / Distribute items evenly /
+    align-items: center;
+}
+
+header nav a {
     color: #fff;
-    text-decoration: none;
-    padding: 10px;
     font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-nav a:hover,
-nav a.active {
+/ Highlight active link /
+a.active {
     background-color: #e5314e;
     border-radius: 5px;
-    color: #fff;
 }
 
-/* Styling for the book container */
+/ On hover, change the background color /
+a:hover {
+    background-color: #e5314e;
+    border-radius: 5px;
+}
+
+/ Styling for the book container /
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #2e3537;
     height: 100vh;
-    margin-top: 60px; /* Add some margin to avoid overlap with header */
+    margin-top: 60px; / Add some margin to avoid overlap with header /
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +65,7 @@ body {
     perspective: 1500;
 }
 
-/* The rest of your book styles */
+/ The rest of your book styles /
 input {
     display: none;
 }
@@ -135,7 +158,7 @@ input {
     z-index: 10;
 }
 
-/* Pages and checkbox handling */
+/ Pages and checkbox handling */
 #page1 {
     z-index: 3;
 }

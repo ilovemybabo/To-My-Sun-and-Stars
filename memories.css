@@ -13,7 +13,7 @@ body {
 
 /* Header styles to ensure it's fixed at the top */
 header {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background-color: transparent; /* Semi-transparent background */
   padding: 20px 50px;
   display: flex;
   justify-content: space-between;

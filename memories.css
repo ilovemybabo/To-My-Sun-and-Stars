@@ -2,15 +2,16 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  min-height: 100vh; /* Make sure content can grow taller than the viewport */
+  min-height: 100vh; /* Ensure the content can grow taller than the viewport */
   display: flex;
   flex-direction: column; /* Stack content vertically */
   justify-content: flex-start;
   align-items: center;
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  background-image: url('https://github.com/ilovemybabo/To-My-Sun-and-Stars/blob/main/images/background2.jpg?raw=true');
-  background-size: cover; /* Ensure background image covers the whole page */
-  background-position: center; /* Center the background */
+  background-image: url('https://raw.githubusercontent.com/ilovemybabo/To-My-Sun-and-Stars/main/images/background2.jpg'); /* Correct background image URL */
+  background-size: cover; /* Make sure the image covers the whole page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Ensure it doesn't repeat */
 }
 
 /* Header styles to ensure it's fixed at the top */
@@ -18,8 +19,8 @@ header {
   background-color: transparent; /* Transparent background */
   padding: 20px 50px;
   display: flex;
-  justify-content: space-between; /* Align nav links to the left */
-  align-items: center; /* Vertically center the nav links */
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   position: fixed; /* Fix the header to the top */
   top: 0;

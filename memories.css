@@ -8,7 +8,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  background-color: #f0f0f0; /* Optional: Add background color */
+  background-image: url('https://github.com/ilovemybabo/To-My-Sun-and-Stars/blob/main/images/background2.jpg?raw=true');
 }
 
 /* Header styles to ensure it's fixed at the top */

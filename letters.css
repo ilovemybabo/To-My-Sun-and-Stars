@@ -1,149 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(45deg, pink, violet);
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    min-width: 30%;
+    min-height: 30%;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 5px 2px black;
+    border-radius: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.fa-heart {
+    color: rgb(183, 43, 44);
+    font-size: 25px;
+    position: absolute;
+    animation: heartMove linear 1;
+    top: -10vh;
+    z-index: 1;
+}
+
+@keyframes heartMove {
+    0% {
+        transform: translateY(-10vh);
+    }
+    100% {
+        transform: translateY(110vh);
+    }
+}
+
+/* Reset margin and padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Header Styling */
 header {
-    background-color: #333;
-    padding: 10px 0;
+    background-color: transparent; /* Transparent background */
+    padding: 20px 50px; /* Adjust padding as needed */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Ensure links are aligned properly */
+    align-items: center; /* Vertically center the navigation */
+    width: 100%;
+    position: absolute; /* Positioning if necessary */
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-nav a {
-    color: white;
+header nav {
+    display: flex;
+    justify-content: flex-start; /* Align nav items to the left */
+    gap: 20px; /* Space between items */
+}
+
+header nav a {
+    color: #fff;
     text-decoration: none;
+    font-size: 18px;
     padding: 10px;
-    margin: 0 15px;
-    display: inline-block;
+    transition: 0.3s;
 }
 
-nav a.active {
-    font-weight: bold;
-    border-bottom: 2px solid #fff;
+/* Optional: Add hover effect */
+header nav a:hover {
+    background-color: rgba(229, 49, 78, 0.8);
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2e3537;
+    height: 100vh;
+    margin-top: 60px; /* To prevent overlap with fixed header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Book Styling */
+.book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 10;
 }
 
 .book {
+    width: 350px;
+    height: 450px;
     position: relative;
-    width: 600px;
-    height: 400px;
-    perspective: 1000px;
-    margin: 50px auto;
+    perspective: 1500;
+    z-index: 10;
 }
 
-.page {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
+input {
+    display: none;
 }
 
-.front-page,
-.back-page {
-    position: absolute;
+.cover,
+.back-cover {
+    background-color: #ad2a2a;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0 0 5px rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: center left;
 }
 
 .cover {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #333;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
+    z-index: 4;
+    transition: transform 1s;
 }
 
 .cover label {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-    color: #fff;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.page label {
+.page {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    background-color: white;
+    width: 330px;
+    height: 430px;
+    border-radius: 0 15px 15px 0;
+    margin-top: 10px;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition-duration: 1.5s;
+    z-index: 2;
+}
+
+.page img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+}
+
+.front-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.back-page {
+    transform: rotateY(180deg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    z-index: 1;
+}
+
+.next,
+.prev {
+    position: absolute;
+    bottom: 1em;
     cursor: pointer;
+    font-size: 30px;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 10px;
 }
 
 .next {
-    right: 10px;
+    right: 1em;
+    z-index: 10;
 }
 
 .prev {
-    left: 10px;
+    left: 1em;
+    z-index: 10;
 }
 
-input[type="checkbox"] {
-    display: none;
-}
-
-input[type="checkbox"]:checked ~ .book .page {
-    transform: rotateY(-180deg);
-}
-
-input[type="checkbox"]:checked ~ .book .page#page1 {
-    z-index: 1;
-}
-input[type="checkbox"]:checked ~ .book .page#page2 {
-    z-index: 2;
-}
-input[type="checkbox"]:checked ~ .book .page#page3 {
+/* Checkbox/Page transitions */
+#page1 {
     z-index: 3;
 }
-input[type="checkbox"]:checked ~ .book .page#page4 {
+
+#page2 {
+    z-index: 2;
+}
+
+#page3 {
+    z-index: 1;
+}
+
+#page4 {
+    z-index: 0;
+}
+
+#page5 {
+    z-index: -1;
+}
+
+#page6 {
+    z-index: -2;
+}
+
+#page7 {
+    z-index: -3;
+}
+
+#checkbox-cover:checked ~ .book {
+    transform: translateX(200px);
+}
+
+#checkbox-cover:checked ~ .book .cover {
+    transition: transform 1.5s, z-index 0.5s 0.5s;
+    transform: rotateY(-180deg);
+    z-index: 1;
+}
+
+#checkbox-page1:checked ~ .book #page1 {
+    transform: rotateY(-180deg);
+    z-index: 2;
+}
+
+#checkbox-page2:checked ~ .book #page2 {
+    transform: rotateY(-180deg);
+    z-index: 3;
+}
+
+#checkbox-page3:checked ~ .book #page3 {
+    transform: rotateY(-180deg);
     z-index: 4;
 }
-input[type="checkbox"]:checked ~ .book .page#page5 {
+
+#checkbox-page4:checked ~ .book #page4 {
+    transform: rotateY(-180deg);
     z-index: 5;
 }
-input[type="checkbox"]:checked ~ .book .page#page6 {
+
+#checkbox-page5:checked ~ .book #page5 {
+    transform: rotateY(-180deg);
     z-index: 6;
 }
-input[type="checkbox"]:checked ~ .book .page#page7 {
+
+#checkbox-page6:checked ~ .book #page5 {
+    transform: rotateY(-180deg);
     z-index: 7;
 }
 
-input[type="checkbox"]:checked ~ .book .cover {
+#checkbox-page7:checked ~ .book #page5 {
+    transform: rotateY(-180deg);
     z-index: 8;
-}
-
-.back-page img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-input[type="checkbox"]:checked ~ .book .page .front-page,
-input[type="checkbox"]:checked ~ .book .page .back-page {
-    transform: rotateY(180deg);
-}
-
-input[type="checkbox"]:checked ~ .book .cover label {
-    display: none;
-}
-
-/* Additional style for the next page to appear correctly */
-.page:not(:checked) .front-page {
-    z-index: 2;
-}
-
-.page:not(:checked) .back-page {
-    z-index: 1;
 }

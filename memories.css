@@ -1,35 +1,58 @@
+/* Reset body to remove any margin or padding */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Ensure the body uses the correct font */
+  height: 100vh; /* Make sure the body takes up the full viewport height */
+  display: flex; /* Use Flexbox for centering the content */
+  flex-direction: column; /* Stack the header and content vertically */
+  justify-content: flex-start; /* Start with content at the top */
+  align-items: center; /* Center horizontally */
+}
+
 header {
-    background-color: transparent; /* Transparent background */
-    padding: 20px 50px; /* Adjust padding as needed */
-    display: flex; /* Use flexbox for alignment */
-    justify-content: space-between; /* Ensure links are aligned properly */
-    align-items: center; /* Vertically center the navigation */
-    width: 100%;
-    position: absolute; /* Positioning if necessary */
-    top: 0;
-    left: 0;
-    z-index: 1000;
+  background-color: transparent;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between; /* Distribute space between nav links */
+  align-items: center;
+  width: 100%;
+  position: fixed; /* Fix the navigation bar at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for better visibility */
 }
 
 header nav {
-    display: flex;
-    justify-content: flex-start; /* Align nav items to the left */
-    gap: 20px; /* Space between items */
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 header nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-    transition: 0.3s;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  transition: 0.3s;
 }
 
-/* Optional: Add hover effect */
+/* Optional: Add hover effect for nav links */
 header nav a:hover {
-    background-color: rgba(229, 49, 78, 0.8);
-    color: #fff;
-    border-radius: 5px;
+  background-color: rgba(229, 49, 78, 0.8);
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Section container should have padding on top to prevent overlap with fixed header */
+.section-container {
+  margin-top: 80px; /* Ensure the content does not go under the fixed header */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Start from the top of the screen */
+  padding: 0 20px;
 }
 
 .section-container section {
@@ -38,7 +61,6 @@ header nav a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Roboto", sans-serif;
 }
 
 .section-container img {
@@ -64,4 +86,4 @@ header nav a:hover {
   border-top: 2px solid #53d7ee;
   border-bottom: 2px solid #53d7ee;
   margin-bottom: 10px;
-}
+}}

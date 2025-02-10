@@ -207,22 +207,33 @@ input {
 
 /* Checkbox/Page transitions */
 #page1 {
-    z-index: 4;
-}
-
-#page2 {
     z-index: 3;
 }
 
-#page3 {
+#page2 {
     z-index: 2;
 }
 
-#page4 {
+#page3 {
     z-index: 1;
 }
 
-/* Checkbox interaction */
+#page4 {
+    z-index: 0;
+}
+
+#page5 {
+    z-index: -1;
+}
+
+#page6 {
+    z-index: -2;
+}
+
+#page7 {
+    z-index: -3;
+}
+
 #checkbox-cover:checked ~ .book {
     transform: translateX(200px);
 }
@@ -252,3 +263,20 @@ input {
     transform: rotateY(-180deg);
     z-index: 5;
 }
+
+#checkbox-page5:checked ~ .book #page5 {
+    transform: rotateY(-180deg);
+    z-index: 6;
+}
+
+#checkbox-page6:checked ~ .book #page5 {
+    transform: rotateY(-180deg);
+    z-index: 7;
+}
+
+#checkbox-page7:checked ~ .book #page5 {
+    transform: rotateY(-180deg);
+    z-index: 8;
+}
+
+/* You can continue for up to page 7 or more, following the same pattern */

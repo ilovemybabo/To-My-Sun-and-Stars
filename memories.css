@@ -9,28 +9,30 @@ body {
   align-items: center;
   overflow-x: hidden; /* Prevent horizontal scrolling */
   background-image: url('https://github.com/ilovemybabo/To-My-Sun-and-Stars/blob/main/images/background2.jpg?raw=true');
+  background-size: cover; /* Ensure background image covers the whole page */
+  background-position: center; /* Center the background */
 }
 
 /* Header styles to ensure it's fixed at the top */
 header {
-  background-color: transparent; /* Semi-transparent background */
+  background-color: transparent; /* Transparent background */
   padding: 20px 50px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* Align nav links to the left */
+  align-items: center; /* Vertically center the nav links */
   width: 100%;
   position: fixed; /* Fix the header to the top */
   top: 0;
   left: 0;
-  z-index: 1000; /* Ensure header stays on top */
+  z-index: 1000; /* Ensure header stays on top of all content */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
 }
 
 /* Navigation links */
 header nav {
   display: flex;
-  justify-content: flex-start;
-  gap: 20px;
+  justify-content: flex-start; /* Align nav items to the left */
+  gap: 20px; /* Space between nav items */
 }
 
 header nav a {
@@ -50,7 +52,7 @@ header nav a:hover {
 
 /* Ensure the section container is below the fixed header */
 .section-container {
-  margin-top: 80px; /* Create space for the fixed header */
+  margin-top: 100px; /* Create space for the fixed header */
   width: 100%;
   display: flex;
   flex-direction: column;

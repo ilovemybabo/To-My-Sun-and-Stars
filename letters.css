@@ -216,6 +216,7 @@ input {
 
 #page4 {
     z-index: 1;
+}
 
 #checkbox-cover:checked ~ .book {
     transform: translateX(200px);
@@ -236,12 +237,13 @@ input {
     transform: rotateY(-180deg);
     z-index: 3;
 }
+
 #checkbox-page3:checked ~ .book #page2 {
     transform: rotateY(-180deg);
     z-index: 3;
 }
 
-#checkbox-page4:checked ~ .book #page2 {
+#checkbox-page4:checked ~ .book #page4 {
     transform: rotateY(-180deg);
-    z-index: 3;
+    z-index: 4;
 }

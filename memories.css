@@ -105,7 +105,7 @@ header nav a:hover {
   width: 100%;
   max-width: 600px; /* Limit heading width */
   text-align: center;
-  border-top: 2px solid #53d7ee;
-  border-bottom: 2px solid #53d7ee;
+  border-top: 2px solid #80091B;
+  border-bottom: 2px solid #80091B;
   margin-bottom: 10px;
 }

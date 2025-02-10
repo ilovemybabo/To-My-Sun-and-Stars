@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 body {
-    background: linear-gradient(45deg, pink, violet);
+    background-image: url('your-image-url.jpg');
     width: 100vw;
     height: 100vh;
     margin: 0px;

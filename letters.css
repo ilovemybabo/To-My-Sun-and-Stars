@@ -234,16 +234,7 @@ input {
     z-index: -3;
 }
 
-#checkbox-cover:checked ~ .book {
-    transform: translateX(200px);
-}
-
-#checkbox-cover:checked ~ .book .cover {
-    transition: transform 1.5s, z-index 0.5s 0.5s;
-    transform: rotateY(-180deg);
-    z-index: 1;
-}
-
+/* Add transitions when pages are checked */
 #checkbox-page1:checked ~ .book #page1 {
     transform: rotateY(-180deg);
     z-index: 2;

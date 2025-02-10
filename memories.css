@@ -1,28 +1,31 @@
-/* Reset body to remove any margin or padding */
+/* Reset body margin and padding to prevent any unwanted spacing */
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif; /* Ensure the body uses the correct font */
-  height: 100vh; /* Make sure the body takes up the full viewport height */
-  display: flex; /* Use Flexbox for centering the content */
-  flex-direction: column; /* Stack the header and content vertically */
-  justify-content: flex-start; /* Start with content at the top */
-  align-items: center; /* Center horizontally */
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh; /* Allow content to be taller than the viewport */
+  display: flex; /* Use Flexbox to structure the layout */
+  flex-direction: column; /* Stack header and content vertically */
+  justify-content: flex-start; /* Start from the top */
+  align-items: center; /* Center content horizontally */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+/* Header styles to ensure it's always at the top */
 header {
   background-color: transparent;
   padding: 20px 50px;
   display: flex;
-  justify-content: space-between; /* Distribute space between nav links */
+  justify-content: space-between; /* Space out the nav items */
   align-items: center;
   width: 100%;
-  position: fixed; /* Fix the navigation bar at the top */
+  position: fixed; /* Fix it to the top of the screen */
   top: 0;
   left: 0;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for better visibility */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for clarity */
 }
 
+/* Navigation links inside the header */
 header nav {
   display: flex;
   justify-content: flex-start;
@@ -37,32 +40,36 @@ header nav a {
   transition: 0.3s;
 }
 
-/* Optional: Add hover effect for nav links */
+/* Hover effect for navigation links */
 header nav a:hover {
   background-color: rgba(229, 49, 78, 0.8);
   color: #fff;
   border-radius: 5px;
 }
 
-/* Section container should have padding on top to prevent overlap with fixed header */
+/* Main content container with margin-top to avoid overlap with header */
 .section-container {
-  margin-top: 80px; /* Ensure the content does not go under the fixed header */
+  margin-top: 80px; /* Give space for the fixed header */
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Start from the top of the screen */
+  justify-content: flex-start; /* Align items from the top */
   padding: 0 20px;
+  overflow: auto; /* Allow content to scroll */
 }
 
+/* Individual sections for each content block */
 .section-container section {
-  height: 100vh;
+  height: auto; /* Remove fixed height so sections can grow */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 40px; /* Add space between sections */
 }
 
+/* Image styling inside sections */
 .section-container img {
   width: 400px;
   border-radius: 10px;
@@ -71,19 +78,22 @@ header nav a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
+/* Section heading styling */
 .section-container section h2 {
   font-size: 40px;
   margin: 16px 0;
 }
 
+/* Paragraph styling inside sections */
 .section-container p {
   padding: 8px 0;
 }
 
+/* Style for section headings with borders */
 .section-container .section-heading {
   width: 400px;
   text-align: center;
   border-top: 2px solid #53d7ee;
   border-bottom: 2px solid #53d7ee;
   margin-bottom: 10px;
-}}
+}

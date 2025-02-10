@@ -11,7 +11,6 @@
 </head>
 <body>
     <header>
-
         <nav>
             <a href="home.html">Home</a>
             <a href="letters.html" class="active">Letters</a>
@@ -20,18 +19,19 @@
             <a href="">Our Home</a>
             <a href="">Open When</a>
         </nav>
-
     </header>
 
-   <body>
     <input type="checkbox" id="checkbox-cover">
     <input type="checkbox" id="checkbox-page1">
     <input type="checkbox" id="checkbox-page2">
     <input type="checkbox" id="checkbox-page3">
+    <input type="checkbox" id="checkbox-page4"> <!-- New checkbox for page4 -->
+
     <div class="book">
         <div class="cover">
             <label for="checkbox-cover"></label>
         </div>
+
         <div class="page" id="page1">
             <div class="front-page">
                 <p><br><br><br><br><br><br>To My Sun and Stars</p>
@@ -42,12 +42,12 @@
                 <label class="prev" for="checkbox-page1"><i class="fas fa-chevron-left"></i></label>
             </div>
         </div>
+
         <div class="page" id="page2">
             <div class="front-page">
                 <h2>Feb 14, 2025</h2>
                 <p>Happy Valentines Day Babo!! <br> <br>
-               By the time you're reading this, I have completed this, but right now, I am less than 20% done. I know this letter was very short so I hope my love for you will be conveyed in the upcoming testimony.
-                <br><br>Would you be surprised that you are the first person that I officially spent Valentine's with? It is also my first time asking someone to be my Valentine. Maybe not because I told you I wasn't with anyone officially</p>
+                By the time you're reading this, I have completed this, but right now, I am less than 20% done...</p>
                 <label class="next" for="checkbox-page2"><i class="fas fa-chevron-right"></i></label>
             </div>
             <div class="back-page">
@@ -55,14 +55,33 @@
                 <label class="prev" for="checkbox-page2"><i class="fas fa-chevron-left"></i></label>
             </div>
         </div>
+
         <div class="page" id="page3">
             <div class="front-page">
                 <p>before you. <br><br>
-                    Since my last letter, I've learned a lot about you and you learned a lot about me.   We spent a night talking about how we would find each other in every universe. I don't know if you knew but I was bawling my eyes out because I did not want to imagine a universe where we didn't find each other. That's when you reassured me and said we would find each other.</p>
+                    Since my last letter, I've learned a lot about you and you learned a lot about me.   We spent a night talking about how we would find each other in every universe. I don't know if you knew but I was bawling my eyes out because I did not want to imagine a universe where we didn't find each other. That's when you reassured me and said we would find each other.
+<br><br> I really want to build a statue in remembrance of us when we leave this Earth, </p>
+                <label class="next" for="checkbox-page3"><i class="fas fa-chevron-right"></i></label>
+                 </div>
+            <div class="back-page">
+                <img src="https://github.com/ilovemybabo/To-My-Sun-and-Stars/blob/main/images/valentine1.jpg?raw=true">
+                <label class="prev" for="checkbox-page3"><i class="fas fa-chevron-left"></i></label>
             </div>
         </div>
-        <div class="back-cover"></div>
+
+        <!-- New Page 4 -->
+        <div class="page" id="page4">
+            <div class="front-page">
+                <p>so that future generations would look at the statue in envy and talk amongst themselves how we loved each other so deeply. When we cease to exist, our love would still be alive, flourishing and abundant.</p>
+                <label class="next" for="checkbox-page4"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-page">
+                <img src="https://example.com/your-image.jpg" alt="Image for page 4">
+                <label class="prev" for="checkbox-page4"><i class="fas fa-chevron-left"></i></label>
+            </div>
         </div>
+
+        <div class="back-cover"></div>
     </div>
 
     <script src="heartrain.js"></script>

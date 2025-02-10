@@ -1,31 +1,32 @@
-/* Reset body margin and padding to prevent any unwanted spacing */
+/* Reset body margin and padding */
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  min-height: 100vh; /* Allow content to be taller than the viewport */
-  display: flex; /* Use Flexbox to structure the layout */
-  flex-direction: column; /* Stack header and content vertically */
-  justify-content: flex-start; /* Start from the top */
-  align-items: center; /* Center content horizontally */
+  min-height: 100vh; /* Make sure content can grow taller than the viewport */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: flex-start;
+  align-items: center;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  background-color: #f0f0f0; /* Optional: Add background color */
 }
 
-/* Header styles to ensure it's always at the top */
+/* Header styles to ensure it's fixed at the top */
 header {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   padding: 20px 50px;
   display: flex;
-  justify-content: space-between; /* Space out the nav items */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  position: fixed; /* Fix it to the top of the screen */
+  position: fixed; /* Fix the header to the top */
   top: 0;
   left: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for clarity */
+  z-index: 1000; /* Ensure header stays on top */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
 }
 
-/* Navigation links inside the header */
+/* Navigation links */
 header nav {
   display: flex;
   justify-content: flex-start;
@@ -47,31 +48,35 @@ header nav a:hover {
   border-radius: 5px;
 }
 
-/* Main content container with margin-top to avoid overlap with header */
+/* Ensure the section container is below the fixed header */
 .section-container {
-  margin-top: 80px; /* Give space for the fixed header */
+  margin-top: 80px; /* Create space for the fixed header */
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Align items from the top */
+  justify-content: flex-start;
   padding: 0 20px;
-  overflow: auto; /* Allow content to scroll */
+  overflow: auto; /* Allow scrolling of content */
 }
 
-/* Individual sections for each content block */
+/* Individual section styling */
 .section-container section {
-  height: auto; /* Remove fixed height so sections can grow */
+  width: 100%;
+  max-width: 1200px; /* Limit section width */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 40px; /* Add space between sections */
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-/* Image styling inside sections */
+/* Image styling */
 .section-container img {
-  width: 400px;
+  width: 100%;
+  max-width: 600px; /* Limit image width */
   border-radius: 10px;
   border: 2px solid black;
   padding: 16px;
@@ -80,18 +85,22 @@ header nav a:hover {
 
 /* Section heading styling */
 .section-container section h2 {
-  font-size: 40px;
+  font-size: 36px;
   margin: 16px 0;
+  color: #333;
 }
 
-/* Paragraph styling inside sections */
+/* Paragraph styling */
 .section-container p {
   padding: 8px 0;
+  font-size: 18px;
+  color: #555;
 }
 
-/* Style for section headings with borders */
+/* Section heading border styling */
 .section-container .section-heading {
-  width: 400px;
+  width: 100%;
+  max-width: 600px; /* Limit heading width */
   text-align: center;
   border-top: 2px solid #53d7ee;
   border-bottom: 2px solid #53d7ee;

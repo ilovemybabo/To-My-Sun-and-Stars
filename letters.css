@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-body{
-    background: linear-gradient(45deg,pink,violet);
+body {
+    background: linear-gradient(45deg, pink, violet);
     width: 100vw;
     height: 100vh;
     margin: 0px;
@@ -25,23 +25,24 @@ body{
     text-align: center;
     font-size: 30px;
     padding: 5px 10px;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
 }
+
 .fa-heart {
     color: rgb(183, 43, 44);
     font-size: 25px;
     position: absolute;
-    animation:  heartMove linear 1;
+    animation: heartMove linear 1;
     top: -10vh;
     z-index: 1;
 }
 
 @keyframes heartMove {
-    0%{
-        transform: translateY(-10vh) ;
+    0% {
+        transform: translateY(-10vh);
     }
-    100%{
-        transform: translateY(110vh) ;
+    100% {
+        transform: translateY(110vh);
     }
 }
 
@@ -86,6 +87,7 @@ header nav a:hover {
     color: #fff;
     border-radius: 5px;
 }
+
 /* Body Styling */
 body {
     font-family: 'Poppins', sans-serif;
@@ -118,7 +120,8 @@ input {
     display: none;
 }
 
-.cover, .back-cover {
+.cover,
+.back-cover {
     background-color: #ad2a2a;
     width: 100%;
     height: 100%;
@@ -180,7 +183,8 @@ input {
     z-index: 1;
 }
 
-.next, .prev {
+.next,
+.prev {
     position: absolute;
     bottom: 1em;
     cursor: pointer;
@@ -203,21 +207,22 @@ input {
 
 /* Checkbox/Page transitions */
 #page1 {
-    z-index: 3;
+    z-index: 4;
 }
 
 #page2 {
-    z-index: 2;
+    z-index: 3;
 }
 
 #page3 {
-    z-index: 1;
+    z-index: 2;
 }
 
 #page4 {
     z-index: 1;
 }
 
+/* Checkbox interaction */
 #checkbox-cover:checked ~ .book {
     transform: translateX(200px);
 }
@@ -238,12 +243,12 @@ input {
     z-index: 3;
 }
 
-#checkbox-page3:checked ~ .book #page2 {
+#checkbox-page3:checked ~ .book #page3 {
     transform: rotateY(-180deg);
-    z-index: 3;
+    z-index: 4;
 }
 
 #checkbox-page4:checked ~ .book #page4 {
     transform: rotateY(-180deg);
-    z-index: 4;
+    z-index: 5;
 }

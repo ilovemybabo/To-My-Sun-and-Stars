@@ -50,8 +50,8 @@ header nav a:hover {
   --columbia-blue: #ff8fab;
   --midnight-green: #e3aabb;
   --yellow: #bf0d43;
-  --timeline-gradient: rgba(255, 179, 198, 1) 0%, rgba(206, 233, 228, 1) 50%,
-    rgba(206, 233, 228, 0) 100%;
+  --timeline-gradient: rgba(255, 179, 198, 1) 0%, rgba(250, 130, 166, 1) 50%,
+    rgba(247, 186, 204, 0) 100%;
 }
 
 *,

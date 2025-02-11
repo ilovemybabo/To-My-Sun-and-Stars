@@ -46,7 +46,7 @@ header nav a:hover {
 :root {
   --white: #fff;
   --black: #323135;
-  --crystal: #ff8fab;
+  --crystal: #fff;
   --columbia-blue: #ff8fab;
   --midnight-green: #e3aabb;
   --yellow: #bf0d43;
@@ -148,7 +148,7 @@ body {
   justify-content: center;
   padding: 20px 40px;
   color: var(--white);
-  background: #fff;
+  background: #b3344d;
   white-space: normal;
   border-radius: 10px;
 }

@@ -323,14 +323,15 @@ body {
     text-align: center;
     letter-spacing: 6px;
     word-spacing: 6px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
+    padding-top: 30px;
     
 }
 .timer{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .sub_timer{
     width: 220px;

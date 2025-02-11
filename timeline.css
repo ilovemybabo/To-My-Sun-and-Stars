@@ -40,17 +40,17 @@ header nav a:hover {
 
 .intro h1 {
   padding-top: 0; /* Remove or adjust padding on the heading */
-    background-color: #dC143c;
+    background-color: #ffb3c6;
 }
 
 :root {
   --white: #fff;
   --black: #323135;
-  --crystal: #a8dadd;
+  --crystal: #ff8fab;
   --columbia-blue: #cee9e4;
-  --midnight-green: #01565b;
-  --yellow: #e5f33d;
-  --timeline-gradient: rgba(206, 233, 228, 1) 0%, rgba(206, 233, 228, 1) 50%,
+  --midnight-green: #c4043f;
+  --yellow: #bf0d43;
+  --timeline-gradient: rgba(255, 179, 198, 1) 0%, rgba(206, 233, 228, 1) 50%,
     rgba(206, 233, 228, 0) 100%;
 }
 

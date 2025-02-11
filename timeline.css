@@ -317,21 +317,21 @@ body {
 }
 
 .timeintro{
-    color: #fff;
+    color: #b3344d;
     font-size: 40px;
     font-weight: lighter;
     text-align: center;
     letter-spacing: 6px;
     word-spacing: 6px;
     margin-bottom: 50px;
-    padding-top: 30px;
+    padding-top: 50px;
     
 }
 .timer{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 .sub_timer{
     width: 220px;

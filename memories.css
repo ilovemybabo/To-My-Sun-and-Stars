@@ -99,6 +99,9 @@ header nav a:hover {
   color: #555;
 }
 
+.heart {
+  color: red;
+
 /* Section heading border styling */
 .section-container .section-heading {
   width: 100%;

@@ -6,7 +6,7 @@ header {
     justify-content: space-between; /* Ensure links are aligned properly */
     align-items: center; /* Vertically center the navigation */
     width: 100%;
-    position: absolute; /* Positioning if necessary */
+    position: relative; /* Positioning if necessary */
     top: 0;
     left: 0;
     z-index: 1000;
@@ -35,7 +35,7 @@ header nav a:hover {
 }
 
 .intro h1 {
-   padding-top: 100px; /* Adjust the value as needed */
+   margin-top: 80px; /* Adjust the value as needed */
 }
 
 :root {

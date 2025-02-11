@@ -79,7 +79,7 @@ img {
 
 body {
   font: normal 16px/1.5 "Inter", sans-serif;
-  background: var(--columbia-blue);
+  background: #FFD1DF;
   color: var(--black);
   margin-bottom: 50px;
 }
@@ -147,7 +147,7 @@ body {
   justify-content: center;
   padding: 20px 40px;
   color: var(--white);
-  background: var(--midnight-green);
+  background: #DC143C;
   white-space: normal;
   border-radius: 10px;
 }

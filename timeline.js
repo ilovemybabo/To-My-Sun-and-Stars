@@ -24,7 +24,7 @@ function setEqualHeights(el) {
   }
 }
 
-  var target_mili_sec = new Date("Oct 10, 2022 14:30:0").getTime();
+  var target_mili_sec = new Date("Jul 01, 2025 00:00:0").getTime();
           function timer() {
               var now_mili_sec = new Date().getTime();
               var remaining_sec = Math.floor( (target_mili_sec - now_mili_sec) / 1000 );

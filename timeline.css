@@ -47,7 +47,7 @@ header nav a:hover {
   --white: #fff;
   --black: #323135;
   --crystal: #ff8fab;
-  --columbia-blue: #cee9e4;
+  --columbia-blue: #ff8fab;
   --midnight-green: #e3aabb;
   --yellow: #bf0d43;
   --timeline-gradient: rgba(255, 179, 198, 1) 0%, rgba(206, 233, 228, 1) 50%,
@@ -148,7 +148,7 @@ body {
   justify-content: center;
   padding: 20px 40px;
   color: var(--white);
-  background: #DC143C;
+  background: #fff;
   white-space: normal;
   border-radius: 10px;
 }

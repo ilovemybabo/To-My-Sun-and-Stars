@@ -6,7 +6,7 @@ header {
     justify-content: space-between; /* Ensure links are aligned properly */
     align-items: center; /* Vertically center the navigation */
     width: 100%;
-    position: relative; /* Positioning if necessary */
+    position: absolute; /* Positioning if necessary */
     top: 0;
     left: 0;
     z-index: 1000;

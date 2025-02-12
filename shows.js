@@ -40,25 +40,27 @@ function showSlider(type) {
     let SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
     let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
     
+    let currentItem;
     if (type === 'next') {
         SliderDom.appendChild(SliderItemsDom[0]);
         thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
         carouselDom.classList.add('next');
+        currentItem = SliderItemsDom[0]; // New item is the first in the list after append
     } else {
         SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
         thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
         carouselDom.classList.add('prev');
+        currentItem = SliderItemsDom[SliderItemsDom.length - 1]; // New item is the last in the list after prepend
     }
 
-    // Remove previous animations (reset classes)
+    // Reset animation for all slides
     SliderItemsDom.forEach(item => {
         item.querySelector('.content').style.animation = 'none';  // Reset animation
     });
 
-    // Apply animation for the new active item
-    let currentItem = SliderItemsDom[0];  // First item in the list after the change
+    // Apply animation to the newly active item
     let content = currentItem.querySelector('.content');
-    content.style.animation = 'showContent 0.5s 1s linear forwards';  // Reapply the animation
+    content.style.animation = 'showContent 0.5s 1s linear forwards';  // Reapply animation
 
     // Remove the next/prev classes after animation finishes
     setTimeout(() => {

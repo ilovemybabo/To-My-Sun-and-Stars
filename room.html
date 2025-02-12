@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Mapping Example</title>
+</head>
+<body>
+
+  <!-- Image with clickable areas -->
+  <img src="your-image.jpg" usemap="#image-map" alt="Image Map Example">
+
+  <!-- Define clickable areas using the <map> tag -->
+  <map name="image-map">
+    <!-- Rectangular area: x1, y1, x2, y2 -->
+    <area shape="rect" coords="34,44,270,350" alt="Link 1" href="https://www.example1.com" target="_blank">
+    <!-- Circular area: x, y, radius -->
+    <area shape="circle" coords="500,200,50" alt="Link 2" href="https://www.example2.com" target="_blank">
+    <!-- Polygonal area: list of x, y points -->
+    <area shape="poly" coords="150,150,200,200,100,200" alt="Link 3" href="https://www.example3.com" target="_blank">
+  </map>
+
+</body>
+</html>

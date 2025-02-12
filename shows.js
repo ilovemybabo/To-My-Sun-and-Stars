@@ -1,63 +1,49 @@
+//step 1: get DOM
+let nextDom = document.getElementById('next');
+let prevDom = document.getElementById('prev');
 
-    
-var nextBtn = document.querySelector('.next'),
-    prevBtn = document.querySelector('.prev'),
-    carousel = document.querySelector('.carousel'),
-    list = document.querySelector('.list'), 
-    item = document.querySelectorAll('.item'),
-    runningTime = document.querySelector('.carousel .timeRunning') 
+let carouselDom = document.querySelector('.carousel');
+let SliderDom = carouselDom.querySelector('.carousel .list');
+let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
+let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
+let timeDom = document.querySelector('.carousel .time');
 
-let timeRunning = 3000 
-let timeAutoNext = 7000
+thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+let timeRunning = 3000;
+let timeAutoNext = 7000;
 
-nextBtn.onclick = function(){
-    showSlider('next')
+nextDom.onclick = function(){
+    showSlider('next');    
 }
 
-prevBtn.onclick = function(){
-    showSlider('prev')
+prevDom.onclick = function(){
+    showSlider('prev');    
 }
-
-let runTimeOut 
-
+let runTimeOut;
 let runNextAuto = setTimeout(() => {
-    nextBtn.click()
+    next.click();
 }, timeAutoNext)
-
-
-function resetTimeAnimation() {
-    runningTime.style.animation = 'none'
-    runningTime.offsetHeight /* trigger reflow */
-    runningTime.style.animation = null 
-    runningTime.style.animation = 'runningTime 7s linear 1 forwards'
-}
-
-
-function showSlider(type) {
-    let sliderItemsDom = list.querySelectorAll('.carousel .list .item')
+function showSlider(type){
+    let  SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
+    let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
+    
     if(type === 'next'){
-        list.appendChild(sliderItemsDom[0])
-        carousel.classList.add('next')
-    } else{
-        list.prepend(sliderItemsDom[sliderItemsDom.length - 1])
-        carousel.classList.add('prev')
+        SliderDom.appendChild(SliderItemsDom[0]);
+        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+        carouselDom.classList.add('next');
+    }else{
+        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+        thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
+        carouselDom.classList.add('prev');
     }
+    clearTimeout(runTimeOut);
+    runTimeOut = setTimeout(() => {
+        carouselDom.classList.remove('next');
+        carouselDom.classList.remove('prev');
+    }, timeRunning);
 
-    clearTimeout(runTimeOut)
-
-    runTimeOut = setTimeout( () => {
-        carousel.classList.remove('next')
-        carousel.classList.remove('prev')
-    }, timeRunning)
-
-
-    clearTimeout(runNextAuto)
+    clearTimeout(runNextAuto);
     runNextAuto = setTimeout(() => {
-        nextBtn.click()
+        next.click();
     }, timeAutoNext)
-
-    resetTimeAnimation() // Reset the running time animation
 }
-
-// Start the initial animation 
-resetTimeAnimation()

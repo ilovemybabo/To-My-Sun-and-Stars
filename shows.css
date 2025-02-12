@@ -7,8 +7,9 @@
 }
 
 html, body {
-    height: 100%; /* Ensure full viewport height */
-    margin: 0;
+    height: 100%; /* Ensure full height */
+    margin: 0;    /* Remove any default margin */
+    padding: 0;   /* Remove any default padding */
 }
 /* Header section */
 header{

@@ -1,0 +1,113 @@
+/* Reset body margin and padding */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh; /* Ensure the content can grow taller than the viewport */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  background-image: url('https://raw.githubusercontent.com/ilovemybabo/To-My-Sun-and-Stars/main/images/background2.jpg'); /* Correct background image URL */
+  background-size: cover; /* Make sure the image covers the whole page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Ensure it doesn't repeat */
+}
+
+/* Header styles to ensure it's fixed at the top */
+header {
+  background-color: transparent; /* Transparent background */
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed; /* Fix the header to the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure header stays on top of all content */
+}
+
+/* Navigation links */
+header nav {
+  display: flex;
+  justify-content: flex-start; /* Align nav items to the left */
+  gap: 20px; /* Space between nav items */
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+/* Hover effect for navigation links */
+header nav a:hover {
+  background-color: rgba(229, 49, 78, 0.8);
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Ensure the section container is below the fixed header */
+.section-container {
+  margin-top: 100px; /* Create space for the fixed header */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 20px;
+  overflow: auto; /* Allow scrolling of content */
+}
+
+/* Individual section styling */
+.section-container section {
+  width: 100%;
+  max-width: 1200px; /* Limit section width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px; /* Add space between sections */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Image styling */
+.section-container img {
+  width: 100%;
+  max-width: 600px; /* Limit image width */
+  border-radius: 10px;
+  border: 2px solid #cb416b;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Section heading styling */
+.section-container section h2 {
+  font-size: 36px;
+  margin: 16px 0;
+  color: #800020;
+}
+
+/* Paragraph styling */
+.section-container p {
+  padding: 8px 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.heart {
+  color: red;
+
+/* Section heading border styling */
+.section-container .section-heading {
+  width: 100%;
+  max-width: 600px; /* Limit heading width */
+  text-align: center;
+  border-top: 2px solid #cb416b;
+  border-bottom: 2px solid #cb416b;
+  margin-bottom: 10px;
+}

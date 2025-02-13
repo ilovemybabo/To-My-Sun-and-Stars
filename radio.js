@@ -23,91 +23,91 @@ let updateTimer;
 const music_list = [
     {
         img : 'images/album1.png',
-        name : '\u2665 Lily of The Valley',
+        name : '\u2665 Lily of The Valley \u2665',
         artist : 'DANIEL',
         music : 'mp3/1 Lily of The Valley.mp3'
     },
   
     {
         img : 'images/album2.png',
-        name : '\u2665 Binibini',
+        name : '\u2665 Binibini \u2665',
         artist : 'Zack Tabudlo',
         music : 'mp3/2 Binibini.mp3'
     },
   
     {
         img : 'images/album3.png',
-        name : '\u2665 Ontario',
+        name : '\u2665 Ontario \u2665',
         artist : 'Novo Amor, Lowswimmer',
         music : 'mp3/3 Ontario.mp3'
     },
   
     {
         img : 'images/album4.png',
-        name : '\u2665 End of Small Sanctuary',
+        name : '\u2665 End of Small Sanctuary \u2665',
         artist : 'Akira Yamaoka',
         music : 'mp3/4 End of Small Sanctuary.mp3'
     },
 
      {
         img : 'images/album14.png',
-        name : '\u2665 Party Police',
+        name : '\u2665 Party Police \u2665',
         artist : 'Alvvays',
         music : 'mp3/Alvvays - Party Police (with lyrics).mp3'
     },
 
    {
         img : 'images/blbum5.png',
-        name : '\u2665 Chow Chow',
+        name : '\u2665 Chow Chow \u2665',
         artist : 'DELISPICE',
         music : 'mp3/5 Chow Chow.mp3'
     },
 
    {
         img : 'images/album6.png',
-        name : '\u2665 Umaasa',
+        name : '\u2665 Umaasa \u2665',
         artist : 'Calein',
         music : 'mp3/6 Umaasa.mp3'
     },
 
    {
         img : 'images/album7.png',
-        name : '\u2665 Autumn',
+        name : '\u2665 Autumn \u2665',
         artist : 'Ben&Ben, Belle Mariano',
         music : 'mp3/7 Autumn.mp3'
     },
 
    {
         img : 'images/album8.png',
-        name : '\u2665 New Heart Design',
+        name : '\u2665 New Heart Design \u2665',
         artist : 'Turnstile',
         music : 'mp3/8 New Heart Design.mp3'
     },
 
    {
         img : 'images/blbum9.png',
-        name : '\u2665 Lefty',
+        name : '\u2665 Lefty \u2665',
         artist : 'Title Fight',
         music : 'mp3/9 Lefty.mp3'
     },
 
      {
         img : 'images/album11.png',
-        name : '\u2665 Come Inside Of My Heart',
+        name : '\u2665 Come Inside Of My Heart \u2665',
         artist : 'IV Of Spades',
         music : 'mp3/11 Come Inside Of My Heart.mp3'
     },
 
      {
         img : 'images/album15.png',
-        name : '\u2665 Swimming',
+        name : '\u2665 Swimming \u2665',
         artist : 'Flawed Mangoes',
         music : 'mp3/Flawed Mangoes - Swimming.mp3'
     },
 
      {
         img : 'images/album16.png',
-        name : '\u2665 In Undertow',
+        name : '\u2665 In Undertow \u2665',
         artist : 'Alvvays',
         music : 'mp3/Alvvays - In Undertow [Lyrics].mp3'
     },
@@ -115,7 +115,7 @@ const music_list = [
 
    {
         img : 'images/album10.png',
-        name : '\u2665 Pasilyo',
+        name : '\u2665 Pasilyo \u2665',
         artist : 'SunKissed Lola',
         music : 'mp3/10 Pasilyo.mp3'
     },
@@ -123,14 +123,14 @@ const music_list = [
 
    {
         img : 'images/blbum12.png',
-        name : '\u2665 drunk',
+        name : '\u2665 drunk \u2665',
         artist : 'keshi',
         music : 'mp3/12 Drunk.mp3'
     },
 
    {
         img : 'images/album13.png',
-        name : '\u2665 Killswitch Lullaby',
+        name : '\u2665 Killswitch Lullaby \u2665',
         artist : 'Flawed Mangoes',
         music : 'mp3/13 Killswitch Lullaby.mp3'
     },

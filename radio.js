@@ -23,7 +23,7 @@ let updateTimer;
 const music_list = [
     {
         img : 'images/album1.png',
-        name : '&#9829; Lily of The Valley',
+        name : '"\u2665" Lily of The Valley',
         artist : 'DANIEL',
         music : 'mp3/1 Lily of The Valley.mp3'
     },

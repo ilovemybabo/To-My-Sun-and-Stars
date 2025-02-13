@@ -49,8 +49,15 @@ const music_list = [
         music : 'mp3/4 End of Small Sanctuary.mp3'
     },
 
+     {
+        img : 'images/album14.png',
+        name : 'Party Police',
+        artist : 'Alvvays',
+        music : 'mp3/Alvvays - Party Police (with lyrics).mp3'
+    },
+
    {
-        img : 'images/album5.png',
+        img : 'images/blbum5.png',
         name : 'Chow Chow',
         artist : 'DELISPICE',
         music : 'mp3/5 Chow Chow.mp3'
@@ -78,11 +85,33 @@ const music_list = [
     },
 
    {
-        img : 'images/album9.png',
+        img : 'images/blbum9.png',
         name : 'Lefty',
         artist : 'Title Fight',
         music : 'mp3/9 Lefty.mp3'
     },
+
+     {
+        img : 'images/album11.png',
+        name : 'Come Inside Of My Heart',
+        artist : 'IV Of Spades',
+        music : 'mp3/11 Come Inside Of My Heart.mp3'
+    },
+
+     {
+        img : 'images/album15.png',
+        name : 'Swimming',
+        artist : 'Flawed Mangoes',
+        music : 'mp3/Flawed Mangoes - Swimming.mp3'
+    },
+
+     {
+        img : 'images/album16.png',
+        name : 'In Undertow',
+        artist : 'Alvvays',
+        music : 'mp3/Alvvays - In Undertow [Lyrics].mp3'
+    },
+
 
    {
         img : 'images/album10.png',
@@ -91,15 +120,9 @@ const music_list = [
         music : 'mp3/10 Pasilyo.mp3'
     },
 
-   {
-        img : 'images/album11.png',
-        name : 'Come Inside Of My Heart',
-        artist : 'IV Of Spades',
-        music : 'mp3/11 Come Inside Of My Heart.mp3'
-    },
 
    {
-        img : 'images/album12.png',
+        img : 'images/blbum12.png',
         name : 'drunk',
         artist : 'keshi',
         music : 'mp3/12 Drunk.mp3'
